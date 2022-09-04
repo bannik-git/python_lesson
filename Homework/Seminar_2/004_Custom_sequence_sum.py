@@ -6,7 +6,7 @@ user_list = []
 for i in range(user_number):
     user_list.append(randint(-user_number, user_number))
 
-print(f"\nВаша последовательность - {user_list}")
+print(f"\nВаш список - {user_list}")
 
 user_index = input("""\nВведите индексы элементов произведение которых Вы хотите получить
 последовательность чисел вводить через пробел: """)
