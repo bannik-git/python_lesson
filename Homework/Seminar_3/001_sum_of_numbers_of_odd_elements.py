@@ -13,6 +13,7 @@ def sum_of_numbers_of_odd_elements(number_list: list) -> int:
 
     return sum_odd_element
 
+
 user_list = [2, 3, 5, 9, 3]
 res = sum_of_numbers_of_odd_elements(user_list)
 print(res)
