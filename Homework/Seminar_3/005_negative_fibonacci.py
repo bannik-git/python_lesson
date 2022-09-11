@@ -13,9 +13,8 @@ def negative_fibonacci(sequence_size: int) -> list:
         positive_sequence.append(positive_sequence[i-1] + positive_sequence[i-2])  
 
     negative_sequence = positive_sequence.copy()
-    for i in range(len(negative_sequence)):
-        if i % 2 != 0:
-            negative_sequence[i] *= -1
+    for i in range(1, len(negative_sequence), 2):
+        negative_sequence[i] *= -1
     negative_sequence.reverse()
 
     return negative_sequence + [0] + positive_sequence
