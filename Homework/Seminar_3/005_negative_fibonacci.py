@@ -9,6 +9,9 @@
 def negative_fibonacci(sequence_size: int) -> list:
     
     positive_sequence = [1, 1]
+    if sequence_size == 1:
+        positive_sequence =[1]
+        
     for i in range(2, sequence_size):
         positive_sequence.append(positive_sequence[i-1] + positive_sequence[i-2])  
 
