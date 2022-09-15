@@ -4,12 +4,16 @@
 import time
 
 def my_random(minn, maxx):
-    time.sleep(0.3)
+    time.sleep(0.05)
     return int((time.time() % 1  * (maxx - minn)) + minn)
 
-
-for i in range(10):
-    print(my_random(1, 9))
+count = 0
+for i in range(1000000):
+    a = my_random(1, 2)
+    count += 1
+    print(f'{count} : {a}')
+    if a == 9:
+        print('Max')
 
 # Вариант №2
 # def random(a,b):
