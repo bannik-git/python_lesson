@@ -10,12 +10,14 @@ def polynomial_creation(degree: int) -> str:
     polynomial_arguments = ''
 # user_degree +1  потому что aх^2 + bx + c = 0 
     for i in range(degree + 1):
-        if i < (degree - 1): 
-            polynomial_arguments += f'{randint(0, 100)}*x^{degree - i} + '
-        elif i == (degree - 1):
-            polynomial_arguments += f'{randint(0, 100)}*x + '
-        else:
-            polynomial_arguments += f'{randint(0, 100)} = 0'
+        number = randint(0, 99)
+        if number != 0:
+            if i < (degree - 1): 
+                polynomial_arguments += f'{number}*x^{degree - i} + '
+            elif i == (degree - 1):
+                polynomial_arguments += f'{number}*x + '
+            else:
+                polynomial_arguments += f'{number} = 0'
 
     return polynomial_arguments
 
