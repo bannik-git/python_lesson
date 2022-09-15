@@ -9,23 +9,31 @@
 # пи = сумм(1/16^n*(4/(8*n+1)- 2/(8*n+4) - 1/(8*n +5) - 1/(8*n +6)))
 
 
-from decimal import Decimal, ROUND_FLOOR
 
 
 def f(n):
-    return Decimal((1 / 16 ** n) * ((4 / (8 * n + 1)) - (2 / (8 * n + 4)) - (1 / (8 * n + 5)) - (1/ (8 * n + 6))))
+    return (1 / 16 ** n) * ((4 / (8 * n + 1)) - (2 / (8 * n + 4)) - (1 / (8 * n + 5)) - (1/ (8 * n + 6)))
 
+def round_up(number: int, accuracy: float) -> float:
+    accuracy = len(accuracy.split('.')[1])
+    divider = 1
+    for i in range(accuracy):
+        divider *= 10
 
-accuracy = Decimal(input("Введите необходимую точность: ").replace(",", "."))
+    return number * divider // 1 / divider
+        
+
+accuracy = input("Введите необходимую точность: ").replace(",", ".")
 n = 0
-result = Decimal(0)
+result = 0
 switch = True
 while switch:
     
-    if (f(n - 1) - f(n)) > accuracy:
+    if (f(n - 1) - f(n)) > float(accuracy):
         result += f(n)
         n += 1
     else:
         switch = False
 
-print(result.quantize(Decimal('0.' + n * '0'), ROUND_FLOOR))
+
+print(round_up(result, accuracy))
