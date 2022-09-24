@@ -1,3 +1,4 @@
+from itertools import count
 from tkinter import *
 import tkinter
 from tkinter import messagebox
@@ -10,13 +11,14 @@ window.geometry(f'{height_w}x{width_w}')
 
 def start_game():
 
-    global btk_1, btk_2, count_of_moves, user_char
+    global btk_1, btk_2, count_of_moves, user_char 
+    count_of_moves = 0
+    user_char = True
     btk_1 = Button(master=window, text='Игра против пользователя', command = lambda x = False: start_new_game(x))
     btk_2 = Button(master=window, text='Игра против компьютера', command = lambda x = True: start_new_game(x))
     btk_1.place(relx=0.2, rely=0.2, relheight=0.2 ,relwidth=0.6)
     btk_2.place(relx=0.2, rely=0.5, relheight=0.2 ,relwidth=0.6)
-    count_of_moves = 0
-    user_char = True
+   
 
 
 def сonclusion_of_the_winner(button_list: list, char: list = ['O']):
@@ -129,7 +131,8 @@ def clik(index: int, button_list: list, enemy: bool):
         count_of_moves += 1
         сonclusion_of_the_winner(button_list)
     else:
-        user_char = not user_char
+        if count_of_moves != 0:
+            user_char = not user_char
 
     if count_of_moves >= 9:
         if messagebox.askokcancel("Ничья", 'Вы молодец!'): 
