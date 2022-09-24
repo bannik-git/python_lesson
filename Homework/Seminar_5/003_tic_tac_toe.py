@@ -1,7 +1,6 @@
 from tkinter import *
 import tkinter
 from tkinter import messagebox
-
  
 height_w = 320
 width_w = 250
@@ -85,23 +84,31 @@ def move_computer(button_list: list, count_of_moves: int):
 
     if count_of_moves <= 1:
         user_move = user_move_to_corner(button_list)
-        if user_move[0] in (0, 2, 6, 8):
-            put_up_a_sign(user_move[1], button_list, 'O')
-        elif button_list[4]['text'] != 'X':
+        if button_list[4]['text'] != 'X':
             put_up_a_sign(4, button_list, 'O')
+        elif user_move[0] in (0, 2, 6, 8):
+            put_up_a_sign(user_move[1], button_list, 'O')
+
     elif winner_computer[0] and button_list[winner_computer[1]]['text'] != 'X':
         put_up_a_sign(winner_computer[1], button_list, 'O')
     elif winner_user[0]:
         put_up_a_sign(winner_user[1], button_list, 'O')
     else:
-        for i in (0, 2, 6, 8):
-            if button_list[i]['text'] != 'X':
-                put_up_a_sign(i, button_list, 'O')
-                break
-        for i in range(9):
-            if button_list[i]['text'] == '':
-                put_up_a_sign(i, button_list, 'O')
-                break
+        if button_list[0]['text'] == button_list[8]['text'] == 'X' \
+            or button_list[2]['text'] == button_list[6]['text'] == 'X':
+            put_up_a_sign(5, button_list, 'O')
+        elif button_list[7]['text'] == button_list[5]['text'] == 'X' and button_list[8]['text'] != 'O':
+            put_up_a_sign(8, button_list, 'O')
+        else:
+            for i in (0, 2, 6, 8):
+                if button_list[i]['text'] == '':
+                    put_up_a_sign(i, button_list, 'O')
+                    break
+            else:
+                for i in range(9):
+                    if button_list[i]['text'] == '':
+                        put_up_a_sign(i, button_list, 'O')
+                        break
     
     
 def put_up_a_sign(index: int, button_list: list, char: str):
