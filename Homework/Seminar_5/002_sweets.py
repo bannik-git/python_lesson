@@ -97,12 +97,12 @@ while sweets > 1:
     
     if enemy == 2:
         if complexity == 1:
-            comp_move = move_player(user_1 if stroke_detection else user_2, sweets, complexity)
+            move = move_player(user_1 if stroke_detection else user_2, sweets, complexity)
         else:
-            comp_move = move_player(user_1 if stroke_detection else user_2, sweets, complexity)
-        
-        print(f'Ход компьютера: {comp_move}')
-        sweets -= comp_move
+            move = move_player(user_1 if stroke_detection else user_2, sweets, complexity)
+        if not(stroke_detection):
+            print(f'Ход компьютера: {move}')
+        sweets -= move
     
     else:
         sweets -= move_player(user_1 if stroke_detection else user_2, sweets)
