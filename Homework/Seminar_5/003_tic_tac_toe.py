@@ -19,7 +19,7 @@ def start_game():
     btk_1.place(relx=0.2, rely=0.2, relheight=0.2 ,relwidth=0.6)
     btk_2.place(relx=0.2, rely=0.5, relheight=0.2 ,relwidth=0.6)
    
-
+   
 
 def сonclusion_of_the_winner(button_list: list, char: list = ['O']):
     if victory(button_list, char):
@@ -74,8 +74,9 @@ def winning_moves(button_list: list, char: str)-> tuple:
 def user_move_to_corner(button_list: list)-> bool:
     'Проверка что пользователь не занял угол'
     index_move = [8, 6, 2, 0]
-    for i in (0, 2, 6, 8):
-        if button_list[i]['text'] == 'X':
+    corners = [0, 2, 6, 8]
+    for i in range(len(corners)):
+        if button_list[corners[i]]['text'] == 'X':
             return (i, index_move[i])
     return (False, False)
 
