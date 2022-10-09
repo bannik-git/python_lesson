@@ -1,0 +1,45 @@
+Sun Oct  9 21:30:24 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:30:39 2022: Добавлен новый пользователь 6 123 123 123 123
+Sun Oct  9 21:30:50 2022: Закрытие программы 
+C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:31:17 2022: чтение файла txt путь Homework/Seminar_8/log.txt
+Sun Oct  9 21:31:17 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:31:17 2022: запуск программы
+Sun Oct  9 21:31:46 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:32:02 2022: Добавлен новый пользователь 6 454 45324 34134 123123
+Sun Oct  9 21:33:04 2022: Закрытие программы 
+C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:35:37 2022: чтение файла txt путь Homework/Seminar_8/log.txt
+Sun Oct  9 21:35:37 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:35:37 2022: запуск программы
+Sun Oct  9 21:35:41 2022: Удаление пользователей: ['id Имя Фамилия Телефон Примечание', '1 Semen Semenovich 876526323123 GD', '2 Ivan Ivanov 87165126313 prog', '3 Semen Semenovich 876526323123 GD']
+Sun Oct  9 21:35:43 2022: Закрытие программы 
+C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:36:57 2022: чтение файла txt путь Homework/Seminar_8/log.txt
+Sun Oct  9 21:36:57 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:36:57 2022: запуск программы
+Sun Oct  9 21:37:01 2022: Удаление пользователей: 2 Semen Semenovich 876526323123 GD
+Sun Oct  9 21:37:01 2022: Удаление пользователей: 3 Ivan Ivanov 87165126313 prog
+Sun Oct  9 21:37:01 2022: Удаление пользователей: 4 Иван Иванов 8921542154224 Стажер
+Sun Oct  9 21:37:04 2022: Закрытие программы 
+C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:38:19 2022: чтение файла txt путь Homework/Seminar_8/log.txt
+Sun Oct  9 21:38:19 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:38:19 2022: запуск программы
+Sun Oct  9 21:38:35 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:38:57 2022: Добавлен новый пользователь 6 Сидор Сидоров 85452154515 Стажер
+Sun Oct  9 21:39:00 2022: запись файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:39:09 2022: Удаление пользователей: 2 Semen Semenovich 876526323123 GD
+Sun Oct  9 21:39:09 2022: Удаление пользователей: 3 Ivan Ivanov 87165126313 prog
+Sun Oct  9 21:39:09 2022: Удаление пользователей: 4 Иван Иванов 8921542154224 Стажер
+Sun Oct  9 21:39:09 2022: Удаление пользователей: 5 Сидор Сидоров 85452154515 Стажер
+Sun Oct  9 21:39:24 2022: запись файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:39:26 2022: Закрытие программы 
+C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:39:40 2022: чтение файла txt путь Homework/Seminar_8/log.txt
+Sun Oct  9 21:39:40 2022: чтение файла csv путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.csv
+Sun Oct  9 21:39:40 2022: запуск программы
+Sun Oct  9 21:39:58 2022: запись файла json путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.json
+Sun Oct  9 21:40:08 2022: чтение файла json путь C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.json
+Sun Oct  9 21:40:17 2022: Закрытие программы 
+C:/Users/admin/Desktop/GeekBrains/Python/Homework/Seminar_8/base.json
